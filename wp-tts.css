@@ -1,0 +1,41 @@
+.wp-tts-container {
+    position: relative;
+    padding: 20px;
+}
+
+.wp-tts-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 28px;
+    color: #0073aa;
+    z-index: 1000;
+    display: block;
+    transition: transform 0.2s ease;
+}
+
+.wp-tts-icon:hover {
+    color: #005177;
+    transform: scale(1.2);
+}
+
+.wp-tts-icon .dashicons {
+    font-family: Dashicons !important;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Ensure visibility of play/pause icons */
+.wp-tts-icon .dashicons-controls-volumeon:before {
+    content: "\f478";
+}
+
+.wp-tts-icon .dashicons-controls-pause:before {
+    content: "\f523";
+}
